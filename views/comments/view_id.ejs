@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specific Comment</title>
+</head>
+<body>
+    <% if(comment) { %>
+        <h1>The comment with id: <%= comment.id %></h1>
+        <h4><%= comment.username %></h4>
+        <p><%= comment.comment %></p>
+        <a href="/comments">Back to comments</a>
+    <% }else{   %>
+        <h1>OOPS! No comment exist with this particular id</h1>
+        <a href="/comments/">Back to comments</a>
+    <% }           %>
+    </body>
+</html>
